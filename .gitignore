@@ -48,6 +48,8 @@ Temporary Items
 .apdisk
 /node_modules
 /www
+/dev
+/dist
 *.babelrc
 *.log
 *.gitignore

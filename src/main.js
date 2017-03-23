@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './app/Counter';
 import ReactApp from './app/app.component.jsx';
 
 

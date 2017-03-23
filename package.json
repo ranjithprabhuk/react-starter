@@ -7,7 +7,6 @@
     "compile": "webpack",
     "start": "npm build &&  node server.production.js",
     "dev": "webpack && node server.js",
-    "dev-watch": "webpack -d --watch && node server.js",
     "build": "webpack --config ./webpack.production.config.js --progress --colors",
     "test": "mocha --compilers js:babel-register --require ./test/helpers.js --require ./test/dom.js --require ignore-styles --recursive src/**/*.spec.{js,jsx}",
     "tdd": "npm test -- --watch"

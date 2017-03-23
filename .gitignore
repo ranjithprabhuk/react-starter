@@ -49,7 +49,6 @@ Temporary Items
 /node_modules
 /www
 /dev
-/dist
 *.babelrc
 *.log
 *.gitignore

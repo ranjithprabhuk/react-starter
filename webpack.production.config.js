@@ -4,14 +4,14 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    context: path.join(__dirname, 'src'),
+    context: path.join(__dirname, 'src/app'),
     entry: [
         './main.js',
     ],
     output: {
-        path: path.join(__dirname, 'dev'),
+        path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/dev'
+        publicPath: '/dist'
     },
     module: {
         rules: [
@@ -37,13 +37,13 @@ module.exports = {
                         {
                             loader: 'css-loader',
                             options: {
-                                minimize: false
+                                minimize: true
                             }
                         },
                         {
                             loader: 'sass-loader',
                             options: {
-                                minimize: false
+                                minimize: true
                             }
                         }
                     ],
@@ -56,6 +56,14 @@ module.exports = {
         new ExtractTextPlugin({
             filename: "css/style.css",
             allChunks: true
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: { warnings: true }
+        }),
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
+            }
         })
     ],
     resolve: {

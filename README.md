@@ -6,9 +6,9 @@ The primary goal of this project is to remain as **unopinionated** as possible. 
 
 ## DEMO
 
-    * [Click Here to see the sample react app] (https://ranjithprabhuk.github.io/react-starter/dist/)
+* [Click Here to see the sample react app] (https://ranjithprabhuk.github.io/react-starter/dist/)
 
-    * [Download React Starter] (https://github.com/ranjithprabhuk/react-starter/archive/master.zip)
+* [Download React Starter] (https://github.com/ranjithprabhuk/react-starter/archive/master.zip)
 
 ## Features
 * [react](https://github.com/facebook/react)

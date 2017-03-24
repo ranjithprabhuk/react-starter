@@ -1,6 +1,32 @@
 import React from 'react';
+import HeaderList from './header-list.component.jsx';
 
 class Header extends React.Component {
+
+    constructor(){
+        super();
+
+        this.state ={
+            menu:[
+                {
+                    id:1,
+                    name:"Home",
+                    link:"Home"
+                },
+                {
+                    id:1,
+                    name:"Home",
+                    link:"Home"
+                },
+                {
+                    id:1,
+                    name:"Home",
+                    link:"Home"
+                }
+            ]
+        }
+
+    };
     render() {
         return (
             <nav className="navbar navbar-toggleable-md navbar-light bg-faded" >
@@ -11,15 +37,7 @@ class Header extends React.Component {
                 <a className="navbar-brand" href="#">React Starter</a>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
-                        </li>
+                        {this.state.menu.map((list,i) => <HeaderList key = {i} data= {list} />)}
                     </ul>
                 </div>
             </nav >

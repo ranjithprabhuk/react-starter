@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BasicExample from './app/app.component.jsx';
+import ReactApp from './app/app.component.jsx';
 
 
  

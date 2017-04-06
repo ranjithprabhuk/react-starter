@@ -1,48 +1,17 @@
 import React from 'react';
-import HeaderList from './header-list.component.jsx';
 
-class Header extends React.Component {
-
-    constructor(){
-        super();
-
-        this.state ={
-            menu:[
-                {
-                    id:1,
-                    name:"Home",
-                    link:"Home"
-                },
-                {
-                    id:1,
-                    name:"Home",
-                    link:"Home"
-                },
-                {
-                    id:1,
-                    name:"Home",
-                    link:"Home"
-                }
-            ]
-        }
-
-    };
+class Home extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar-toggleable-md navbar-light bg-faded" >
-                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <a className="navbar-brand" href="#">React Starter</a>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        {this.state.menu.map((list,i) => <HeaderList key = {i} data= {list} />)}
-                    </ul>
-                </div>
-            </nav >
+             <div className="jumbotron">
+                    <div className="container">
+                        <h1 className="display-3">Hello, world!</h1>
+                        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+                        <p><a className="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                    </div>
+            </div>
         )
     }
 };
 
-export default Header;
+export default Home;

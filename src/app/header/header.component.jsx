@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import HeaderList from './header-list.component.jsx';
+import Home from '../home/home.component.jsx';
 
 
 class Header extends React.Component {
@@ -65,11 +66,7 @@ class Header extends React.Component {
     }
 };
 
-const Home = () => (
-    <div>
-        <h2>Home</h2>
-    </div>
-)
+
 
 const About = () => (
     <div>
